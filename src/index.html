@@ -8,6 +8,7 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
     <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/dataTables.bootstrap4.min.css">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,7 +27,6 @@
 
   <!-- Vendors CSS -->
   <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
-
   <link rel="stylesheet" href="assets/vendor/libs/apex-charts/apex-charts.css" />
 
   <!-- Page CSS -->
@@ -37,6 +37,8 @@
   <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
   <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
   <script src="assets/js/config.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+
 </head>
 <body>
   <app-root></app-root>
@@ -46,6 +48,17 @@
   <script src="assets/vendor/libs/popper/popper.js"></script>
   <script src="assets/vendor/js/bootstrap.js"></script>
   <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+    <script>
+      $(document).ready(function() {
+    $('#example').DataTable();
+       } );
+    </script>
+
+
 
   <script src="assets/vendor/js/menu.js"></script>
   <!-- endbuild -->
